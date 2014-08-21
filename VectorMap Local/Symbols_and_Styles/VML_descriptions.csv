@@ -1,0 +1,103 @@
+Feat_code,description,GML_Class,notes
+15405,Spot height position,PointMember
+15406,Air height position,PointMember
+15407,Air height label,TextMember
+15408,Triangulation Station,PointMember
+15409,Standard contour label,PointMember
+15410,Ridge or rock line,LineMember
+15442,Refuse or Slag Heap,AreaMember
+15450,Sand Pit,AreaMember
+15451,Gravel Pit,AreaMember
+15500,Coniferous woodland,AreaMember
+15501,Coniferous woodland and Shrub,AreaMember
+15502,Mixed woodland,AreaMember
+15503,Mixed woodland and Shrub,AreaMember
+15504,Broad-leafed woodland,AreaMember
+15505,Broad-leafed woodland and Shrub,AreaMember
+15506,Orchard,AreaMember
+15507,Shrub,AreaMember
+15508,Shrub and Heathland,AreaMember
+15509,Shrub and Unimproved Grass,AreaMember
+15510,Shrub and Unimproved Grass and Boulders,AreaMember
+15511,Shrub and Marsh,AreaMember
+15512,Shrub and Marsh and Heath,AreaMember
+15513,Shrub and Marsh and Unimproved Grass,AreaMember
+15514,Shrub and Heathland and Unimproved Grass,AreaMember
+15515,Shrub and Heathland and Boulders,AreaMember
+15516,Shrub and Boulders,AreaMember
+15517,Heathland,AreaMember
+15518,Heathland and Unimproved Grass ,AreaMember
+15519,Heathland and Unimproved Grass and Boulders,AreaMember
+15520,Heathland and Boulders,AreaMember
+15521,Heathland and Marsh,AreaMember
+15522,Unimproved Grass,AreaMember
+15525,Unimproved Grass and Sand,AreaMember
+15524,Unimproved Grass and Shingle,AreaMember
+15522,Unimproved Grass,AreaMember
+15523,Unimproved Grass and Boulders,AreaMember
+15526,Marsh,AreaMember
+15527,Marsh and Unimproved Grass,AreaMember
+15528,Reeds,AreaMember
+15529,Inland Rock,AreaMember
+15530,Boulders,AreaMember
+15531,Boulders and Shingle,AreaMember
+15532,Boulders and Sand,AreaMember
+15533,Boulders and Mud,AreaMember
+15534,Shingle,AreaMember
+15535,Shingle and Sand,AreaMember
+15536,Shingle and Mud,AreaMember
+15537,Sand,AreaMember
+15538,Mud,AreaMember
+15540,Vegetation or Landform Limit,LineMember
+15550,Custom landform polygon,AreaMember
+15551,Custom landform line,LineMember
+15560,Top of standard slopes,LineMember
+15561,Top of large slopes,LineMember
+15562,Top of Cliff,LineMember
+15600,Water Feature,LineMember
+15603,Water name,TextMember
+15604,Mean High Water,LineMember
+15605,Mean Low Water,LineMember
+15606,Point feature water1,PointMember,Traditionally shown as blue dots 
+15607,Point feature water2,PointMember,Traditionally shown as blue circles 
+15608,Sea polygon,AreaMember
+15609,Inland water polygon,AreaMember
+15610,Standard flow arrow,PointMember
+15611,Large flow arrow,PointMember
+15700,General road casing,LineMember
+15701,General road name,TextMember
+15710,"Motorway,alignment",RoadCLineMember 
+15711,"Motorway,road number",TextMember
+15712,"Motorway,road name",TextMember
+15720,"A Road,trunk,alignment",RoadCLineMember 
+15721,"A Road,trunk,road name",TextMember
+15722,"A Road,trunk,road number",TextMember
+15723,"A Road,primary,alignment",RoadCLineMember 
+15724,"A Road,primary,road name",TextMember
+15725,"A Road,primary,road number",TextMember
+15726,"A Road,primary and trunk,alignment",RoadCLineMember 
+15727,"A Road,primary and trunk,road name",TextMember
+15728,"A Road,primary and trunk,road number",TextMember
+15729,"A Road,alignment",RoadCLineMember 
+15730,"A Road,road name",TextMember
+15731,"A Road,road number",TextMember
+15740,"B Road,primary,alignment",RoadCLineMember 
+15741,"B Road,primary,road name",TextMember
+15742,"B Road,primary,road number",TextMember
+15743,"B Road,alignment",RoadCLineMember 
+15744,"B Road,road name",TextMember
+15745,"B Road,road number",TextMember
+15750,"Minor Road,alignment",RoadCLineMember 
+15751,"Minor Road,road name",TextMember
+15760,"Local Street,alignment",RoadCLineMember 
+15761,"Local Street,road name",TextMember
+15770,"Alleyway,alignment",RoadCLineMember 
+15771,"Alleyway,road name",TextMember
+15780,"Private Road,Public Access,alignment",RoadCLineMember 
+15781,"Private Road,Public Access,road name",TextMember
+15782,"Private Road,Restricted,alignment",RoadCLineMember 
+15783,"Private Road,Restricted,road name",TextMember
+15790,"Pedestrianised Street,alignment",RoadCLineMember 
+15791,"Pedestrianised Street,road name",TextMember
+15792,Road Tunnel,RoadCLineMember 
+ 

@@ -1,0 +1,864 @@
+#! <?xml version="1.0" encoding="windows-1252" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    fme.exe "Terrain 50 - ASCII grid mosaicer.fmw"
+#          --SourceDataset_ESRIASCIIGRID "Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 50\2013-11-06\ASCII_grid\**\*.zip"
+#          --FEATURE_TYPES ""
+#          --DestDataset_ESRIASCIIGRID D:\Raster_Outputs
+#    
+#    
+#! PASSWORD=""
+#! GRID_VISIBLE="false"
+#! VIEW_POSITION="0 0"
+#! SHOW_INFO_NODES="true"
+#! ATTR_TYPE_ENCODING="SDF"
+#! FME_STROKE_MAX_DEVIATION="0"
+#! GRID_SNAPTO="false"
+#! BEGIN_PYTHON=""
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! DESCRIPTION=""
+#! GRID_HEIGHT="50"
+#! TITLE=""
+#! SHOW_BOOKMARKS="true"
+#! MAX_LOG_FEATURES="200"
+#! END_TCL=""
+#! FME_BUILD_NUM="13545"
+#! ZOOM_SCALE="100"
+#! CATEGORY=""
+#! REDIRECT_TERMINATORS="NONE"
+#! LEGAL_TERMS_CONDITIONS=""
+#! FME_REPROJECTION_ENGINE="FME"
+#! USAGE=""
+#! END_PYTHON=""
+#! HISTORY=""
+#! GRID_WIDTH="50"
+#! REQUIREMENTS_KEYWORD=""
+#! SOURCE_ROUTING_FILE=""
+#! DESTINATION_ROUTING_FILE=""
+#! DESTINATION="NONE"
+#! LAST_SAVE_DATE="2013-11-06T14:16:22"
+#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#! WORKSPACE_VERSION="1"
+#! SOURCE="NONE"
+#! LAST_SAVE_BUILD="FME(R) 2013 SP4 (20131002 - Build 13545 - WIN64)"
+#! FME_SERVER_SERVICES=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! LOG_FILE=""
+#! REQUIREMENTS=""
+#! BEGIN_TCL=""
+#! SHOW_ANNOTATIONS="true"
+#! VIEW_PAGE_BREAKS="false"
+#! IGNORE_READER_FAILURE="No"
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="ESRIASCIIGRID"
+#! DATASET="$(SourceDataset_ESRIASCIIGRID)"
+#! KEYWORD="ESRIASCIIGRID_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float fme_feature_type char(50) multi_reader_keyword char(50) multi_reader_id integer fme_dataset char(50) multi_reader_full_id integer fme_geometry fme_char(50) multi_reader_type char(50) fme_fill_color char(50) fme_basename char(50) fme_text_string char(50) fme_secondary_axis float fme_primary_axis float fme_sweep_angle float esriasciigrid_type char(64) fme_start_angle float fme_type char(50) fme_color char(50)"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="13545"
+#! MAX_FEATURES=""
+#! COORDSYS="BritishNatGrid"
+#! MIN_FEATURES=""
+#! FEATURE_TYPES="$(FEATURE_TYPES)"
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="AUTO_FANOUT_ATTRIBUTE"
+#! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_AUTO_EXPOSE"
+#! VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINX ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINY ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXX ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXY ESRIASCIIGRID_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="ESRIASCIIGRID"
+#! DATASET="$(DestDataset_ESRIASCIIGRID)"
+#! KEYWORD="ESRIASCIIGRID_2"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="64"
+#! ATTR_CASE="ANYFIRSTNONNUMERIC"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="esriasciigrid_tab_file_generation $(_ESRIASCIIGRID_TAB_FILE_GENERATION)"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_secondary_axis float fme_dataset char(50) fme_fill_color char(50) fme_text_string char(50) fme_feature_type char(50) fme_text_size float fme_start_angle float fme_rotation float fme_type char(50) esriasciigrid_type char(64) fme_geometry fme_char(50) fme_primary_axis float fme_sweep_angle float fme_basename char(50) fme_color char(50)"
+#! DEFLINE_PARMS="&quot;GUI CHOICE esriasciigrid_tab_file_generation yes%no TAB File Generation&quot; no "
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=". %-#[]&quot;()!?*&apos;&amp;+\/"
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="13545"
+#! FANOUT_PREFIX=""
+#! COORDSYS="BritishNatGrid"
+#! FANOUT="No"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! FANOUT_DIRECTORY=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="AUTO_FANOUT_ATTRIBUTE"
+#! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_AUTO_EXPOSE"
+#! VALUE="fme_basename char(50)"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(254)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="datetime"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="time"
+#! FME_TYPE="fme_time"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_date"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="decimal(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int32"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="decimal(11,0)"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="decimal(20,0)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="decimal(20,0)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_int16"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(254)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="datetime"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="time"
+#! FME_TYPE="fme_time"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_date"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="decimal(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int32"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="decimal(11,0)"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="decimal(20,0)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="decimal(20,0)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_int16"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="esriasciigrid_raster"
+#! FME_TYPE="fme_raster"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_point"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_text"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_line"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_arc"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_area"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_surface"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_solid"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_collection"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="esriasciigrid_raster"
+#! FME_TYPE="fme_raster"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_point"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_text"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_line"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_arc"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_area"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_surface"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_solid"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_collection"
+#! FORMAT="ESRIASCIIGRID"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="ESRIASCIIGRID"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="1"
+#! FEAT_GEOMTYPE="esriasciigrid_raster"
+#! POSITION="178 -466"
+#! ORDER="2"
+#! COLLAPSED="true"
+#! KEYWORD="ESRIASCIIGRID_1"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="true"
+#! MERGE_FILTER="*"
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="true"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)" EXPOSABLE_ATTR="true"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="Terrain_50_DTM"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="4"
+#! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#! POSITION="1473 -521"
+#! ORDER="4"
+#! COLLAPSED="false"
+#! KEYWORD="ESRIASCIIGRID_2"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! >
+#! <DEFLINE_PARM PARM_NAME="esriasciigrid_tab_file_generation" PARM_VALUE="no"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI MULTIFILE SourceDataset_ESRIASCIIGRID ASC_Files(*.asc)/GRD_Files(*.grd)|*.asc;*.grd|ASC_Files(*.asc)|*.asc|GRD_Files(*.grd)|*.grd|All_Files(*.*)|*.* Source Esri ASCII Grid File(s):"
+#! DEFAULT_VALUE="Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 50\2013-11-06\ASCII_grid\**\*.zip"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES &quot;Q:&lt;backslash&gt;GIS_DATA&lt;backslash&gt;ZZ&lt;space&gt;Original&lt;space&gt;GIS&lt;space&gt;Data&lt;backslash&gt;Ordnance&lt;space&gt;Survey&lt;backslash&gt;Terrain&lt;space&gt;50&lt;backslash&gt;2013-11-06&lt;backslash&gt;ASCII_grid&lt;backslash&gt;**&lt;backslash&gt;*.zip,_FORMAT_OVERRIDE_,ESRIASCIIGRID,_DATASET_OVERRIDE_,SourceDataset_ESRIASCIIGRID,CLIP_TO_ENVELOPE,NO,COORDSYS,BritishNatGrid,GROUP_BY_DATASET,No,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES,_EXTRA_DATASETS,\&quot;&quot;&quot;Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36ne.zip\*.grd&quot;&quot;,&quot;&quot;Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36nw.zip\*.asc&quot;&quot;,&quot;&quot;Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36nw.zip\*.grd&quot;&quot;,&quot;&quot;Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36se.zip\*.asc&quot;&quot;,&quot;&quot;Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36se.zip\*.grd&quot;&quot;,&quot;&quot;Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36sw.zip\*.asc&quot;&quot;,&quot;&quot;Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36sw.zip\*.grd&quot;&quot;\&quot;,_MERGE_SCHEMAS,YES&quot; Feature Types to Read:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI DIRNAME DestDataset_ESRIASCIIGRID Destination Esri ASCII Grid Directory:"
+#! DEFAULT_VALUE="D:\Raster_Outputs"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="2"
+#! TYPE="RasterMosaicker"
+#! VERSION="1"
+#! POSITION="668 -378"
+#! ORDER="3"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NODATA_OVERWRITE" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PALETTES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MERGE_PALETTES_NAME" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterMosaicker"/>
+#! <XFORM_PARM PARM_NAME="DATA_VALUES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ALIGNMENT_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SNAPPING_TYPE_NAME" PARM_VALUE="Offset"/>
+#! <XFORM_PARM PARM_NAME="COMPOSITE_USING_ALPHA_BAND_NAME" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#! <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="No"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="3"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="5"
+#! SOURCE_NODE="2"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_ESRIASCIIGRID_1,ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINX_ESRIASCIIGRID_1,ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINY_ESRIASCIIGRID_1,ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXX_ESRIASCIIGRID_1,ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXY_ESRIASCIIGRID_1,ESRIASCIIGRID_IN_CLIP_TO_ENVELOPE_ESRIASCIIGRID_1,SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRIASCIIGRID_1,DestDataset_ESRIASCIIGRID_2
+
+
+
+DEFAULT_MACRO SourceDataset_ESRIASCIIGRID Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 50\2013-11-06\ASCII_grid\**\*.zip
+GUI MULTIFILE SourceDataset_ESRIASCIIGRID ASC_Files(*.asc)/GRD_Files(*.grd)|*.asc;*.grd|ASC_Files(*.asc)|*.asc|GRD_Files(*.grd)|*.grd|All_Files(*.*)|*.* Source Esri ASCII Grid File(s):
+DEFAULT_MACRO FEATURE_TYPES 
+GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES "Q:<backslash>GIS_DATA<backslash>ZZ<space>Original<space>GIS<space>Data<backslash>Ordnance<space>Survey<backslash>Terrain<space>50<backslash>2013-11-06<backslash>ASCII_grid<backslash>**<backslash>*.zip,_FORMAT_OVERRIDE_,ESRIASCIIGRID,_DATASET_OVERRIDE_,SourceDataset_ESRIASCIIGRID,CLIP_TO_ENVELOPE,NO,COORDSYS,BritishNatGrid,GROUP_BY_DATASET,No,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES,_EXTRA_DATASETS,\"""Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36ne.zip\*.grd"",""Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36nw.zip\*.asc"",""Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36nw.zip\*.grd"",""Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36se.zip\*.asc"",""Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36se.zip\*.grd"",""Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36sw.zip\*.asc"",""Q:\GIS_DATA\ZZ Original GIS Data\Ordnance Survey\Terrain 5\ASCII\sp36sw.zip\*.grd""\",_MERGE_SCHEMAS,YES" Feature Types to Read:
+DEFAULT_MACRO DestDataset_ESRIASCIIGRID D:\Raster_Outputs
+GUI DIRNAME DestDataset_ESRIASCIIGRID Destination Esri ASCII Grid Directory:
+INCLUDE TCL
+proc __FME_ExpandMacros {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\([^()$]*\)}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::FME_MacroValues([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandMacros $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_ExpandEnvVars {text {maxlevels 100}} {
+   if { $maxlevels <= 0 } { return $text; }
+   set pattern [join {{\$} {\{[^\{\}$]*\}}} {}]
+   set indices [regexp -inline -all -indices $pattern $text]
+   if [llength $indices] {
+      foreach pair [lreverse $indices] {
+         lassign $pair start end
+         set replacement {}
+         set replacement $::env([string range $text [expr $start + 2] [expr $end - 1]])
+         set text [string replace $text $start $end $replacement]
+      }
+      return [__FME_ExpandEnvVars $text [expr $maxlevels - 1]]
+   }
+   return $text
+}
+
+proc __FME_EvalAndEncodeMacro {macroName} {
+   set macroVal {}
+   catch { set macroVal [__FME_ExpandMacros $::FME_MacroValues($macroName)] }
+   catch { set macroVal [__FME_ExpandEnvVars $macroVal] }
+    if {[string equal -length 15 {FME_CONDITIONAL} $macroVal ] == 0} {
+        return [FME_EncodeText $macroVal];
+    }
+   return $macroVal; 
+}
+END_INCLUDE
+INCLUDE [	puts "MACRO SourceDataset_ESRIASCIIGRID__FMEENCODED__ [__FME_EvalAndEncodeMacro SourceDataset_ESRIASCIIGRID]" ; ]
+
+INCLUDE [	puts "MACRO FEATURE_TYPES__FMEENCODED__ [__FME_EvalAndEncodeMacro FEATURE_TYPES]" ; ]
+
+INCLUDE [	puts "MACRO DestDataset_ESRIASCIIGRID__FMEENCODED__ [__FME_EvalAndEncodeMacro DestDataset_ESRIASCIIGRID]" ; ]
+
+INCLUDE [ if {{$(SourceDataset_ESRIASCIIGRID)} == {}} { puts_real {Parameter 'SourceDataset_ESRIASCIIGRID' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_ESRIASCIIGRID)} == {}} { puts_real {Parameter 'DestDataset_ESRIASCIIGRID' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE ESRIASCIIGRID
+READER_KEYWORD ESRIASCIIGRID_1
+READER_GEN_DIRECTIVES GROUP_BY_DATASET,No,SEARCH_ENVELOPE_MINX,0,DYNAMIC_WORKFLOW,yes,SEARCH_ENVELOPE_MINY,0,_MERGE_SCHEMAS,YES,CLIP_TO_ENVELOPE,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,_EXTRA_DATASETS,<quote>Q:<backslash>GIS_DATA<backslash>ZZ<space>Original<space>GIS<space>Data<backslash>Ordnance<space>Survey<backslash>Terrain<space>5<backslash>ASCII<backslash>sp36ne.zip<backslash>*.grd<quote><comma><quote>Q:<backslash>GIS_DATA<backslash>ZZ<space>Original<space>GIS<space>Data<backslash>Ordnance<space>Survey<backslash>Terrain<space>5<backslash>ASCII<backslash>sp36nw.zip<backslash>*.asc<quote><comma><quote>Q:<backslash>GIS_DATA<backslash>ZZ<space>Original<space>GIS<space>Data<backslash>Ordnance<space>Survey<backslash>Terrain<space>5<backslash>ASCII<backslash>sp36nw.zip<backslash>*.grd<quote><comma><quote>Q:<backslash>GIS_DATA<backslash>ZZ<space>Original<space>GIS<space>Data<backslash>Ordnance<space>Survey<backslash>Terrain<space>5<backslash>ASCII<backslash>sp36se.zip<backslash>*.asc<quote><comma><quote>Q:<backslash>GIS_DATA<backslash>ZZ<space>Original<space>GIS<space>Data<backslash>Ordnance<space>Survey<backslash>Terrain<space>5<backslash>ASCII<backslash>sp36se.zip<backslash>*.grd<quote><comma><quote>Q:<backslash>GIS_DATA<backslash>ZZ<space>Original<space>GIS<space>Data<backslash>Ordnance<space>Survey<backslash>Terrain<space>5<backslash>ASCII<backslash>sp36sw.zip<backslash>*.asc<quote><comma><quote>Q:<backslash>GIS_DATA<backslash>ZZ<space>Original<space>GIS<space>Data<backslash>Ordnance<space>Survey<backslash>Terrain<space>5<backslash>ASCII<backslash>sp36sw.zip<backslash>*.grd<quote>
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} ESRIASCIIGRID
+MULTI_WRITER_KEYWORD{0} ESRIASCIIGRID_2
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ESRIASCIIGRID_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ESRIASCIIGRID ESRIASCIIGRID_1
+ESRIASCIIGRID_1_DYNAMIC_WORKFLOW YES
+# ============================================================================
+# The following GUI line prompts for a directory to be used as the
+# source of the ESRIASCIIGRID based files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ESRIASCIIGRID_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ESRIASCIIGRID ESRIASCIIGRID_1
+DEFAULT_MACRO SourceDataset_ESRIASCIIGRID_1 $(SourceDataset_ESRIASCIIGRID)
+GUI MULTIFILE SourceDataset_ESRIASCIIGRID_1 ASC_Files(*.asc)/GRD_Files(*.grd)|*.asc;*.grd|ASC_Files(*.asc)|*.asc|GRD_Files(*.grd)|*.grd|All_Files(*.*)|*.* Source Esri ASCII Grid File(s):
+ESRIASCIIGRID_1_READER_META_ATTRIBUTES fme_basename
+DEFAULT_MACRO ESRIASCIIGRID_IN_GROUP_BY_DATASET_ESRIASCIIGRID_1 No
+ESRIASCIIGRID_1_GROUP_BY_DATASET "$(ESRIASCIIGRID_IN_GROUP_BY_DATASET_ESRIASCIIGRID_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINX_ESRIASCIIGRID_1 0
+ESRIASCIIGRID_1_SEARCH_ENVELOPE "$(ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINX_ESRIASCIIGRID_1)"
+GUI OPTIONAL FLOAT ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINX_ESRIASCIIGRID_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINY_ESRIASCIIGRID_1 0
+ESRIASCIIGRID_1_SEARCH_ENVELOPE "$(ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINY_ESRIASCIIGRID_1)"
+GUI OPTIONAL FLOAT ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MINY_ESRIASCIIGRID_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXX_ESRIASCIIGRID_1 0
+ESRIASCIIGRID_1_SEARCH_ENVELOPE "$(ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXX_ESRIASCIIGRID_1)"
+GUI OPTIONAL FLOAT ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXX_ESRIASCIIGRID_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXY_ESRIASCIIGRID_1 0
+ESRIASCIIGRID_1_SEARCH_ENVELOPE "$(ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXY_ESRIASCIIGRID_1)"
+GUI OPTIONAL FLOAT ESRIASCIIGRID_IN_SEARCH_ENVELOPE_MAXY_ESRIASCIIGRID_1 Maximum Y:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+DEFAULT_MACRO ESRIASCIIGRID_IN_CLIP_TO_ENVELOPE_ESRIASCIIGRID_1 NO
+ESRIASCIIGRID_1_CLIP_TO_ENVELOPE "$(ESRIASCIIGRID_IN_CLIP_TO_ENVELOPE_ESRIASCIIGRID_1)"
+GUI OPTIONAL CHECKBOX ESRIASCIIGRID_IN_CLIP_TO_ENVELOPE_ESRIASCIIGRID_1 YES%NO Clip to Search Envelope
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRIASCIIGRID_1 
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRIASCIIGRID_1 Search Envelope Coordinate System:
+ESRIASCIIGRID_1_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRIASCIIGRID_1)"
+# ===========================================================================
+ESRIASCIIGRID_1_DATASET "$(SourceDataset_ESRIASCIIGRID_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ESRIASCIIGRID_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER ESRIASCIIGRID ESRIASCIIGRID_2
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# the destination for the ESRIASCIIGRID based files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_ESRIASCIIGRID_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER ESRIASCIIGRID ESRIASCIIGRID_2
+DEFAULT_MACRO DestDataset_ESRIASCIIGRID_2 $(DestDataset_ESRIASCIIGRID)
+GUI DIRNAME DestDataset_ESRIASCIIGRID_2 Destination Esri ASCII Grid Directory:
+DEFAULT_MACRO _ESRIASCIIGRID_TAB_FILE_GENERATION_ESRIASCIIGRID_2 no
+ESRIASCIIGRID_2_COORDINATE_SYSTEM_GRANULARITY FEATURE
+ESRIASCIIGRID_2_FORCE_FLOAT_NOTATION yes
+ESRIASCIIGRID_2_DATASET "$(DestDataset_ESRIASCIIGRID_2)"
+#! END_DEST_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Terrain 50 - ASCII grid mosaicer.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_ESRIASCIIGRID_1 ESRIASCIIGRID_1
+DEFAULT_MACRO DATASET_KEYWORD_ESRIASCIIGRID_2 ESRIASCIIGRID_2
+# -------------------------------------------------------------------------
+
+ESRIASCIIGRID_1_READER_META_ATTRIBUTES fme_basename fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ESRIASCIIGRID_1_COORDINATE_SYSTEM BritishNatGrid
+ESRIASCIIGRID_1_FEATURE_TYPES $(FEATURE_TYPES)
+ESRIASCIIGRID_2_COORDINATE_SYSTEM BritishNatGrid
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Terrain 50 - ASCII grid mosaicer
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+ESRIASCIIGRID_1_DEF ESRIASCIIGRID
+
+# -------------------------------------------------------------------------
+
+Lookup ___KnownFeatureTypes___   ESRIASCIIGRID yes   "" no
+FACTORY_DEF * TeeFactory   FACTORY_NAME "ESRIASCIIGRID_1 Merger"   INPUT FEATURE_TYPE *   OUTPUT FEATURE_TYPE "ESRIASCIIGRID"
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@FeatureType()) == yes   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(ESRIASCIIGRID,FME_GENERIC,ALIAS_GEOMETRY)
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RasterMosaicFactory    FACTORY_NAME RasterMosaicker    INPUT  FEATURE_TYPE ESRIASCIIGRID    ACCUMULATE_ATTRIBUTES no    NODATA_OVERWRITE No    INTERPOLATION_TYPE_NAME NearestNeighbor    COMPOSITE_USING_ALPHA_BAND no    SNAPPING_TYPE OFFSET    MERGE_PALETTES Yes    OUTPUT MOSAICKED FEATURE_TYPE RasterMosaicker_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "RasterMosaicker_OUTPUT -> Terrain_50_DTM Correlator"    INPUT FEATURE_TYPE RasterMosaicker_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Reproject("BritishNatGrid","BritishNatGrid")       @Transform(FME_GENERIC,ESRIASCIIGRID)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,Terrain_50_DTM)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+ESRIASCIIGRID_2_DEF Terrain_50_DTM   esriasciigrid_tab_file_generation no

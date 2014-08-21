@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE metadata SYSTEM "http://www.esri.com/metadata/esriprof80.dtd"> -->
+<metadata xml:lang="en"><Esri><CreaDate>20120105</CreaDate><CreaTime>16202300</CreaTime><SyncOnce>TRUE</SyncOnce><MetaID>{78BBF99C-49A1-4A7D-A868-9CFB653DB99C}</MetaID></Esri><idinfo><citation><citeinfo><onlink Sync="TRUE">\\wcc-corp.ad\BuData\SICM\05 Workstreams\Observatory\09 GIS\01 Spatial Data Management\GIS FME Loaders\01 Oracle FME Loaders\01 Ordnance Survey (OS) data\OS MasterMap\Symbols\OSMMTopoPoint symbolsCopy</onlink></citeinfo></citation></idinfo><distInfo><distributor><distorTran><onLineSrc><linkage Sync="TRUE">file://\\wcc-corp.ad\BuData\SICM\05 Workstreams\Observatory\09 GIS\01 Spatial Data Management\GIS FME Loaders\01 Oracle FME Loaders\01 Ordnance Survey (OS) data\OS MasterMap\Symbols\OSMMTopoPoint symbolsCopy</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc></distorTran></distributor></distInfo><dataqual><lineage><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">C:\2 Temp Data\masterma\OSMMCartoSymbol symbols</srcused><procdate Sync="TRUE">20111222</procdate><proctime Sync="TRUE">15583500</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">H:\SICM\05 Workstreams\Observatory\09 GIS\01 Spatial Data Management\GIS FME Loaders\01 Oracle FME Loaders\01 Ordnance Survey (OS) data\OS MasterMap\Symbols\OSMMTopoPoint symbols</srcused><procdate Sync="TRUE">20120105</procdate><proctime Sync="TRUE">16202400</proctime></procstep></lineage></dataqual><gmd:GEMINI_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+		<gmd:fileIdentifier>
+			<gco:CharacterString>{dc1b3dd3-67a5-467d-a221-331e522c2cdb}</gco:CharacterString>
+		</gmd:fileIdentifier>
+		<gmd:identificationInfo>
+			<gmd:MD_DataIdentification/>
+		</gmd:identificationInfo>
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>\\PT-8001225\C$\2 Temp Data\masterma\OSMMCartoSymbol symbolsCopy</gmd:URL>
+								</gmd:linkage>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+	</gmd:GEMINI_Metadata></metadata>

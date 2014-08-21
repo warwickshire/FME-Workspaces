@@ -1,4 +1,4 @@
-FME-Workspaces
-==============
+FME-Workbenches
+===============
 
-Collection of workspaces for FME
+A collection of FME workbenches

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE metadata SYSTEM "http://www.esri.com/metadata/esriprof80.dtd"> -->
+<metadata xml:lang="en"><Esri><CreaDate>20111222</CreaDate><CreaTime>15583300</CreaTime><SyncOnce>TRUE</SyncOnce><MetaID>{DB0B7DF2-E51B-47D6-8469-31BEB14D6932}</MetaID></Esri><idinfo><citation><citeinfo><onlink Sync="TRUE">\\PT-8001225\C$\2 Temp Data\masterma\OSMMCartoSymbol symbolsCopy</onlink></citeinfo></citation></idinfo><gmd:GEMINI_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+		<gmd:distributionInfo>
+			<gmd:MD_Distribution>
+				<gmd:transferOptions>
+					<gmd:MD_DigitalTransferOptions>
+						<gmd:onLine>
+							<gmd:CI_OnlineResource>
+								<gmd:linkage>
+									<gmd:URL>\\PT-8001225\C$\2 Temp Data\masterma\OSMMCartoSymbol symbolsCopy</gmd:URL>
+								</gmd:linkage>
+							</gmd:CI_OnlineResource>
+						</gmd:onLine>
+					</gmd:MD_DigitalTransferOptions>
+				</gmd:transferOptions>
+			</gmd:MD_Distribution>
+		</gmd:distributionInfo>
+		<gmd:fileIdentifier><gco:CharacterString>{dc1b3dd3-67a5-467d-a221-331e522c2cdb}</gco:CharacterString></gmd:fileIdentifier></gmd:GEMINI_Metadata><distInfo><distributor><distorTran><onLineSrc><linkage Sync="TRUE">file://\\PT-8001225\C$\2 Temp Data\masterma\OSMMCartoSymbol symbolsCopy</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc></distorTran></distributor></distInfo><dataqual><lineage><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">C:\2 Temp Data\masterma\OSMMCartoSymbol symbols</srcused><procdate Sync="TRUE">20111222</procdate><proctime Sync="TRUE">15583500</proctime></procstep></lineage></dataqual></metadata>
